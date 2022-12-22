@@ -5,6 +5,8 @@
     "main": "server.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
+      "predeploy" : "npm run build",
+      "deploy" : "gh-pages -d build",
       "server-prod": "node server.js",
       "server-dev": "npx nodemon server.js",
       "client": "npm start --prefix ../frontend",
